@@ -39,6 +39,54 @@ With microservices, the Software Development Stages iterate on smaller periods a
 
 ## Microservices Elements
 
+### Monoliths
+
+| Pros              | Cons                         |
+|-------------------|------------------------------|
+| Simple to develop | New team member productivity |
+| Simple to build   | Growing teams                |
+| Simple to test    | Code harder to understand    |
+| Simple to deploy  | No emerging technologies     |
+| Simple to scale   | Scale for bad reasons        |
+|                   | Overloaded container         |
+|                   | Huge database                |
+
+### Building Microservices
+
+A domain corresponds to multiple subdomains. Each subdomain corresponds to a different part of the business.
+
+BUT there are relations between subdomains, e.g. Users, Products and Orders. One solution is to duplicate data.
+
+Sharing databases is discouraged and is an antipattern in the microservices world.
+
+### Organization
+
+From One team per domain -> One team per sub-domain.
+
+Right sized teams: teams size can vary.
+
+Team independence.
+
+Each team is solely responsible for the entire lifecycle of the product.
+
+Inter-team communication requires management.
+
+Each team being independent, they can have their own documentation, repositories and version. 
+
+Each service needs independent data storage.
+
+In the microservices world there is no distributed transaction. There is no immediate consistency of a data. This leads to eventual consistency data based on event sourcing.
+
+### User Interface
+
+Each team can have their own set of graphical components. Challenge is how to maintain a Single application in an environment of unique UIs.
+
+####UI composition:
+- Server side composition, developed by multiple microservices teams;
+- Client side composition, the browser build a single UI interface;
+
+### Services
+
 
 
 
