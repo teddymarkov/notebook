@@ -18,5 +18,36 @@ Types of applications:
 
 ## Setting-Up the Work Environment
 
-Projects are containers for code files. Once we are done with editing, projects are compiled by the compiler into executable files (assembly).
+**Projects** are containers for code files. The project holds references to all the files that are part of the application. Once we are done with editing, projects are compiled by the compiler into executable files (assembly).
+
+**Solution** is a grouping for projects. Its function is the organization of all projects.
+
+### The CLI for .NET
+
+Cross-platform
+
+Example:
+
+- Create a new project:
+
+```cmd
+dotnet new console -n "FirstProgram"
+```
+
+- Compile the application
+
+```cmd
+dotnet build
+```
+
+- Execute the application
+
+```cmd
+dotnet run
+```
+
+
+
+
+
 
